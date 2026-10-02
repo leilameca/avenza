@@ -1,0 +1,1136 @@
+/* AVENZA public art direction. Operational density and layout are preserved. */
+.public-experience {
+  --motion-fast: 150ms;
+  --motion-ui: 260ms;
+  --motion-editorial: 620ms;
+  --motion-hero: 920ms;
+  --ease-response: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-direction: cubic-bezier(0.22, 0.7, 0.15, 1);
+}
+.public-experience .public-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--cream);
+  transition:
+    height var(--motion-ui) var(--ease-response),
+    background var(--motion-ui);
+}
+.public-experience .public-header.is-scrolled {
+  height: 76px;
+  background: var(--paper);
+}
+.public-experience .public-header nav a:after {
+  content: "";
+  position: absolute;
+  inset: auto 0 6px;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--motion-ui) var(--ease-response);
+}
+.public-experience
+  .public-header
+  nav
+  a:is(:hover, :focus-visible, .active):after {
+  transform: scaleX(1);
+}
+.public-experience .button {
+  border-radius: 2px;
+  transition:
+    color var(--motion-fast),
+    background var(--motion-fast),
+    transform var(--motion-fast) var(--ease-response);
+}
+.public-experience .button:active {
+  transform: scale(0.985);
+}
+.public-experience .button svg,
+.public-experience .text-link svg {
+  transition: transform var(--motion-ui) var(--ease-response);
+}
+.public-experience :is(.button, .text-link):hover svg {
+  transform: translateX(3px);
+}
+.public-experience :is(input, select, textarea) {
+  transition:
+    border-color var(--motion-fast),
+    background var(--motion-fast);
+}
+.public-experience :is(input, select, textarea):focus-visible {
+  background: #fffdf8;
+}
+.public-experience input[type="checkbox"] {
+  accent-color: var(--accent);
+}
+.public-route {
+  animation: route-enter 320ms var(--ease-direction) both;
+}
+@keyframes route-enter {
+  from {
+    opacity: 0.35;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.public-experience .home-intro {
+  padding-top: 42px;
+  padding-bottom: 32px;
+}
+.public-experience .home-intro h1 {
+  font-size: clamp(64px, 7.2vw, 108px);
+  letter-spacing: -0.055em;
+}
+.title-line {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.05em;
+}
+.title-line > * {
+  display: block;
+  animation: title-enter var(--motion-hero) var(--ease-editorial) both;
+}
+.title-line:nth-child(2) > * {
+  animation-delay: 110ms;
+}
+@keyframes title-enter {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.public-experience .intro-row {
+  gap: 30px;
+}
+.public-experience .intro-row p {
+  max-width: 280px;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.public-experience .hero-scene {
+  height: clamp(400px, 46vw, 620px);
+}
+.hero-frame {
+  height: 100%;
+  overflow: clip;
+  animation: photo-curtain var(--motion-hero) var(--ease-editorial) both;
+}
+.public-experience .hero-photo {
+  transform: translateY(var(--camera-y, 0px)) scale(1.055);
+  object-position: 50% 58%;
+}
+@keyframes photo-curtain {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+.public-experience .hero-caption > span {
+  background: var(--paper);
+  padding: 12px 16px;
+}
+.public-experience .hero-booking {
+  z-index: 2;
+}
+.public-experience .availability-form {
+  border-radius: 2px;
+  box-shadow: none;
+  border-bottom: 3px solid var(--accent);
+  transition: border-color var(--motion-fast);
+}
+.public-experience .availability-form:focus-within {
+  border-bottom-color: var(--ink);
+}
+.public-experience .section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.public-experience .section-heading h2 {
+  font-size: clamp(48px, 5.2vw, 78px);
+}
+.public-experience .featured-fleet .vehicle-grid {
+  grid-template-columns: 1.35fr 1fr;
+  gap: 34px 40px;
+}
+.public-experience .featured-fleet .vehicle-card:first-child {
+  grid-row: span 2;
+}
+.public-experience .featured-fleet .vehicle-card:first-child img {
+  height: 545px;
+  object-position: 57% 50%;
+}
+.public-experience .featured-fleet .vehicle-card:not(:first-child) img {
+  height: 210px;
+}
+.public-experience .featured-fleet .vehicle-card:first-child h3 {
+  font-size: 25px;
+}
+.public-experience .vehicle-image {
+  border-radius: 0;
+}
+.public-experience .vehicle-image img {
+  transition: transform var(--motion-editorial) var(--ease-editorial);
+}
+.public-experience .vehicle-image:is(:hover, :focus-visible) img {
+  transform: scale(1.06);
+}
+.public-experience .image-label {
+  border: none;
+  border-radius: 0;
+  background: var(--paper);
+  padding: 6px 9px;
+}
+.public-experience .image-arrow {
+  display: none;
+}
+.vehicle-explore {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 10px;
+  color: var(--cream);
+  background: var(--ink);
+  padding: 12px 16px;
+  transition: background var(--motion-fast);
+}
+.vehicle-hover-detail {
+  position: absolute;
+  inset: auto 16px 17px;
+  right: auto;
+  padding: 10px 12px;
+  background: var(--paper);
+  font-size: 9px;
+  opacity: 0;
+  transform: translateY(7px);
+  transition:
+    opacity var(--motion-ui),
+    transform var(--motion-ui) var(--ease-response);
+  max-width: 60%;
+}
+@media (hover: hover) and (min-width: 961px) {
+  .public-experience
+    .vehicle-image:is(:hover, :focus-visible)
+    .vehicle-hover-detail {
+    opacity: 1;
+    transform: none;
+  }
+  .public-experience
+    .vehicle-image:is(:hover, :focus-visible)
+    .vehicle-explore {
+    background: var(--accent);
+  }
+}
+.public-experience .vehicle-price {
+  padding-top: 14px;
+  margin-top: 15px;
+}
+.public-experience .vehicle-info {
+  padding-top: 15px;
+}
+.public-experience .pill-tabs {
+  gap: 8px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.public-experience .pill-tabs button {
+  border-radius: 0;
+  padding: 12px 0;
+  border-bottom: 2px solid transparent;
+  transition:
+    color var(--motion-fast),
+    border-color var(--motion-ui);
+}
+.public-experience .pill-tabs button:is(.selected, :hover) {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.journey-story {
+  min-height: 740px;
+  background: #242820;
+  position: relative;
+  overflow: clip;
+  color: #fffaf0;
+}
+.journey-photo {
+  position: absolute;
+  inset: 0;
+  animation: scene-enter var(--motion-editorial) var(--ease-editorial) both;
+}
+.journey-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.journey-story:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #171b15a3;
+  pointer-events: none;
+}
+.journey-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 100px;
+  padding-top: 92px;
+  padding-bottom: 110px;
+}
+.journey-heading {
+  align-self: start;
+  position: sticky;
+  top: 120px;
+}
+.journey-heading .eyebrow,
+.road-copy .eyebrow {
+  color: #fffaf0;
+}
+.journey-heading h2 {
+  font-size: clamp(56px, 5.8vw, 84px);
+  line-height: 1.02;
+  margin: 24px 0;
+}
+.journey-controls {
+  padding-top: 120px;
+}
+.journey-tabs {
+  display: flex;
+  flex-direction: column;
+}
+.journey-tabs button {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 24px 0;
+  border-bottom: 1px solid #ffffff50;
+  text-align: left;
+  font-size: 15px;
+  color: #fffaf0;
+  transition:
+    color var(--motion-fast),
+    border-color var(--motion-ui);
+}
+.journey-tabs button span {
+  font-size: 10px;
+  color: #e7cabc;
+}
+.journey-tabs button svg {
+  margin-left: auto;
+  transition: transform var(--motion-ui) var(--ease-response);
+}
+.journey-tabs button[aria-selected="true"] {
+  border-bottom-color: #f2ae84;
+}
+.journey-tabs button[aria-selected="true"] svg {
+  transform: rotate(45deg);
+}
+.journey-panel {
+  min-height: 225px;
+  padding-top: 28px;
+}
+.journey-copy {
+  animation: scene-enter var(--motion-ui) var(--ease-response) both;
+}
+.journey-copy small {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: #e7cabc;
+}
+.journey-copy p {
+  color: #fffaf0;
+  font-size: 14px;
+  max-width: 380px;
+  line-height: 1.9;
+  margin: 18px 0 25px;
+}
+.journey-copy .text-link {
+  color: #fffaf0;
+  font-size: 12px;
+}
+.scene-credit {
+  position: absolute;
+  bottom: 24px;
+  left: 56px;
+  z-index: 1;
+  color: #fffaf0;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+}
+@keyframes scene-enter {
+  from {
+    opacity: 0.4;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.public-experience .studio-note {
+  width: 100%;
+  max-width: none;
+  background: var(--accent);
+  color: #fffaf0;
+  text-align: left;
+  padding: 40px max(56px, calc((100vw - 1280px) / 2));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 60px;
+}
+.public-experience .studio-note .eyebrow {
+  justify-content: start;
+  color: #fffaf0;
+  grid-column: 1/-1;
+}
+.public-experience .studio-note h2 {
+  font-size: 43px;
+  margin: 0;
+  grid-row: span 2;
+}
+.public-experience .studio-note p {
+  max-width: 440px;
+  margin: 0;
+  font-size: 12px;
+  color: #fffaf0;
+}
+.public-experience .studio-note .flex {
+  justify-content: start;
+}
+.public-experience .studio-note .text-link {
+  color: #fffaf0;
+  font-size: 10px;
+}
+.road-closing {
+  position: relative;
+  height: 720px;
+  overflow: clip;
+  color: #fffaf0;
+  background: #33392b;
+}
+.road-closing > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 55% 60%;
+}
+.road-closing:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #10170e66;
+  pointer-events: none;
+}
+.road-copy {
+  position: absolute;
+  z-index: 1;
+  inset: 75px 0 auto;
+}
+.road-copy h2 {
+  font-size: clamp(68px, 8.5vw, 125px);
+  line-height: 0.97;
+  margin: 28px 0 40px;
+}
+.road-copy .button {
+  background: #fffaf0;
+  color: var(--ink);
+}
+.road-copy .button:hover {
+  background: #edddc8;
+}
+.road-baseline {
+  position: absolute;
+  inset: auto 0 28px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+}
+.public-experience .public-footer {
+  padding-top: 35px;
+}
+.public-experience .footer-top {
+  padding-bottom: 30px;
+}
+.public-experience .product-page {
+  padding-top: 32px;
+}
+.product-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+.product-heading h1 {
+  font-size: clamp(65px, 7.5vw, 108px);
+  margin: 0;
+}
+.product-heading h1 em {
+  color: var(--accent);
+}
+.product-heading > span {
+  color: var(--muted);
+  font-size: 11px;
+}
+.public-experience .product-page .detail-photo {
+  border-radius: 0;
+  overflow: clip;
+  margin-bottom: 12px;
+}
+.public-experience .product-page .detail-photo img {
+  height: clamp(350px, 42vw, 600px);
+  object-position: 50% 52%;
+}
+.public-experience .product-page .detail-photo > span {
+  background: var(--paper);
+  padding: 7px 10px;
+}
+.public-experience .vehicle-detail-grid {
+  padding-top: 36px;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 80px;
+}
+.public-experience .vehicle-detail-grid .small-section {
+  padding-top: 0;
+  padding-bottom: 24px;
+}
+.public-experience .booking-aside {
+  border-radius: 0;
+  top: 98px;
+  border-top: 3px solid var(--accent);
+}
+.public-experience .booking-aside h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+.booking-progress {
+  height: 2px;
+  background: var(--line);
+  margin-top: 30px;
+  overflow: hidden;
+}
+.booking-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transform-origin: left;
+  transition: transform var(--motion-ui) var(--ease-direction);
+}
+.public-experience .stepper {
+  margin-top: 18px;
+}
+.public-experience .stepper button > span {
+  transition:
+    color var(--motion-fast),
+    background var(--motion-ui),
+    border-color var(--motion-ui);
+}
+.public-experience .booking-step {
+  animation: booking-enter 280ms var(--ease-direction) both;
+}
+@keyframes booking-enter {
+  from {
+    opacity: 0.4;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.public-experience .reservation-summary {
+  border-radius: 0;
+  background: #e8e1d5;
+  top: 98px;
+}
+.public-experience .reservation-summary > img {
+  height: 220px;
+  border-radius: 0;
+}
+.public-experience .vehicle-select,
+.public-experience .extra-options label {
+  border-radius: 0;
+  transition:
+    border-color var(--motion-fast),
+    background var(--motion-fast);
+}
+.public-experience .vehicle-select.selected {
+  background: #f4e6dc;
+  box-shadow: none;
+  border-left: 3px solid var(--accent);
+}
+.public-experience .extra-options label.selected {
+  background: #f4e6dc;
+}
+.public-experience .price-response {
+  animation: price-response 220ms var(--ease-response);
+}
+@keyframes price-response {
+  from {
+    opacity: 0.35;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 85px;
+}
+.public-experience .motion-faq {
+  padding: 0;
+  max-width: none;
+  transition: border-color var(--motion-ui);
+}
+.motion-faq h2 {
+  font: 600 15px var(--sans);
+  letter-spacing: 0;
+  margin: 0;
+}
+.motion-faq button {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  min-height: 75px;
+}
+.motion-faq button svg {
+  flex-shrink: 0;
+  transition: transform var(--motion-ui) var(--ease-response);
+}
+.motion-faq.is-open {
+  border-color: var(--accent);
+}
+.motion-faq.is-open button {
+  color: var(--accent);
+}
+.motion-faq.is-open svg {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 300ms var(--ease-response),
+    opacity 220ms;
+}
+.faq-answer > div {
+  overflow: hidden;
+}
+.public-experience .faq-answer p {
+  margin: 0;
+  padding: 0 24px 0 0;
+  transition: padding-bottom 300ms var(--ease-response);
+}
+.motion-faq.is-open .faq-answer {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.public-experience .motion-faq.is-open p {
+  padding-bottom: 24px;
+}
+.faq-context {
+  position: sticky;
+  top: 105px;
+  align-self: start;
+  background: #292d26;
+  color: #fffaf0;
+}
+.faq-context > img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+.faq-context > div {
+  padding: 30px;
+}
+.faq-context h2 {
+  font-size: 44px;
+}
+.faq-context p {
+  color: #e4e0d7;
+  font-size: 12px;
+}
+.faq-context .eyebrow {
+  color: #e7cabc;
+}
+.faq-context .text-link {
+  color: #fffaf0;
+}
+.public-experience .about-page .info-split {
+  grid-template-columns: 1.15fr 1fr;
+  gap: 70px;
+}
+.public-experience .about-page .info-split > img {
+  height: 590px;
+  border-radius: 0;
+  object-position: 63% 50%;
+}
+.contact-photo {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  object-position: 50% 58%;
+  margin: 24px 0;
+}
+.public-experience .contact-form {
+  border-radius: 0;
+  border-top: 3px solid var(--accent);
+}
+.public-experience .portal-entry {
+  max-width: 1280px;
+  position: relative;
+  padding-right: 50%;
+  min-height: 730px;
+}
+.portal-entry:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 43%;
+  top: 64px;
+  bottom: 64px;
+  background: url("/images/automotive-detail.webp") 65% center / cover;
+}
+.public-experience .portal-entry h1 {
+  font-size: clamp(56px, 5.7vw, 82px);
+}
+.public-experience .portal-entry h1 em {
+  color: var(--accent);
+}
+.public-experience .panel {
+  border-radius: 2px;
+}
+.public-experience[data-motion="ready"]
+  [data-reveal]:not([data-visible="true"]) {
+  transform: translateY(10px);
+}
+.public-experience [data-reveal] {
+  transition:
+    opacity var(--motion-editorial) var(--ease-editorial),
+    transform var(--motion-editorial) var(--ease-editorial);
+}
+.public-experience [data-reveal] img {
+  transition: clip-path var(--motion-editorial) var(--ease-editorial);
+}
+.public-experience[data-motion="ready"]
+  [data-reveal]:not([data-visible="true"])
+  img {
+  clip-path: inset(0 0 100% 0);
+}
+.public-experience [data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+.public-experience [data-reveal][data-visible="true"] img {
+  clip-path: inset(0);
+}
+/* Only functional feedback is added to operations. */
+.planner-row {
+  transition: background 140ms ease-out;
+}
+.planner-row:hover {
+  background: #ece6db;
+}
+.planner-block {
+  transition:
+    filter 140ms ease-out,
+    outline-color 140ms;
+}
+.planner-block:active {
+  filter: brightness(0.9);
+}
+.planner-block:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (max-width: 1100px) {
+  .public-experience .home-intro h1 {
+    font-size: 8.2vw;
+  }
+  .public-experience .intro-row p {
+    max-width: 250px;
+    font-size: 11px;
+  }
+  .journey-content {
+    gap: 45px;
+  }
+  .faq-layout {
+    gap: 35px;
+    grid-template-columns: 1.4fr 1fr;
+  }
+  .vehicle-hover-detail {
+    display: none;
+  }
+  .public-experience .vehicle-detail-grid {
+    gap: 35px;
+  }
+}
+@media (max-width: 960px) {
+  .public-experience .public-header.is-scrolled {
+    height: 76px;
+  }
+  .public-experience .intro-row {
+    align-items: start;
+  }
+  .public-experience .hero-photo {
+    transform: scale(1.035);
+  }
+  .public-experience .featured-fleet .vehicle-card:first-child img {
+    height: 430px;
+  }
+  .public-experience .featured-fleet .vehicle-card:not(:first-child) img {
+    height: 170px;
+  }
+  .public-experience .vehicle-detail-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .public-experience .booking-aside {
+    padding: 24px;
+    position: static;
+  }
+  .public-experience .booking-aside h2 {
+    font-size: 34px;
+  }
+  .public-experience .studio-note {
+    padding: 35px;
+    gap: 18px 30px;
+  }
+  .public-experience .studio-note h2 {
+    font-size: 38px;
+  }
+  .journey-content {
+    padding: 64px 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  .journey-heading {
+    position: static;
+  }
+  .journey-heading h2 {
+    font-size: 56px;
+  }
+  .journey-controls {
+    padding-top: 80px;
+  }
+  .journey-story {
+    min-height: 650px;
+  }
+  .road-closing {
+    height: 650px;
+  }
+  .road-copy h2 {
+    font-size: 90px;
+  }
+  .public-experience .portal-entry {
+    min-height: 680px;
+  }
+  .public-experience .portal-entry h1 {
+    font-size: 56px;
+  }
+  .public-experience .about-page .info-split {
+    gap: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .public-experience .public-header,
+  .public-experience .public-header.is-scrolled {
+    height: 76px;
+  }
+  .public-experience .public-header nav {
+    top: 75px;
+  }
+  .public-experience .home-intro {
+    padding-top: 32px;
+    padding-bottom: 25px;
+  }
+  .public-experience .home-intro h1 {
+    font-size: clamp(53px, 13.7vw, 79px);
+    letter-spacing: -0.045em;
+    line-height: 1.02;
+  }
+  .public-experience .intro-row {
+    display: block;
+  }
+  .public-experience .intro-row p {
+    max-width: 300px;
+    font-size: 11px;
+    line-height: 1.8;
+    margin: 18px 0 0;
+  }
+  .public-experience .intro-row p br {
+    display: none;
+  }
+  .public-experience .hero-scene {
+    height: auto;
+  }
+  .hero-frame {
+    height: 330px;
+  }
+  .public-experience .hero-photo {
+    object-position: 59% 55%;
+  }
+  .public-experience .hero-caption {
+    top: 17px;
+    left: 20px;
+    right: 20px;
+  }
+  .public-experience .hero-caption > span {
+    padding: 8px 10px;
+    font-size: 8px;
+  }
+  .public-experience .hero-caption > span:last-child {
+    display: none;
+  }
+  .public-experience .hero-booking {
+    position: relative;
+    bottom: auto;
+    margin-top: -24px;
+  }
+  .public-experience .hero-scene {
+    margin-bottom: 24px;
+    background: transparent;
+  }
+  .public-experience .section {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+  .public-experience .section-heading h2 {
+    font-size: 49px;
+  }
+  .public-experience .featured-fleet .vehicle-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .public-experience .featured-fleet .vehicle-card:first-child {
+    grid-row: auto;
+  }
+  .public-experience .featured-fleet .vehicle-card:first-child img {
+    height: 320px;
+  }
+  .public-experience .featured-fleet .vehicle-card:not(:first-child) img {
+    height: 235px;
+  }
+  .public-experience .featured-fleet .vehicle-card:first-child h3 {
+    font-size: 21px;
+  }
+  .journey-story {
+    min-height: 820px;
+  }
+  .journey-photo img {
+    object-position: 65% center;
+  }
+  .journey-story:after {
+    background: #11170ecc;
+  }
+  .journey-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 45px 0 60px;
+  }
+  .journey-heading h2 {
+    font-size: 59px;
+    margin: 20px 0 0;
+  }
+  .journey-controls {
+    padding-top: 0;
+  }
+  .journey-tabs button {
+    font-size: 13px;
+    padding: 22px 0;
+  }
+  .journey-panel {
+    min-height: 205px;
+  }
+  .journey-copy p {
+    font-size: 13px;
+  }
+  .scene-credit {
+    left: 20px;
+  }
+  .public-experience .studio-note {
+    padding: 32px 20px;
+    display: block;
+  }
+  .public-experience .studio-note h2 {
+    font-size: 38px;
+    margin: 20px 0;
+  }
+  .public-experience .studio-note p {
+    margin-bottom: 22px;
+  }
+  .road-closing {
+    height: 630px;
+  }
+  .road-closing > img {
+    object-position: 65% center;
+  }
+  .road-closing:after {
+    background: #10170e80;
+  }
+  .road-copy {
+    top: 44px;
+  }
+  .road-copy h2 {
+    font-size: 76px;
+    margin: 24px 0 30px;
+  }
+  .road-copy .button {
+    font-size: 11px;
+    padding: 14px 18px;
+  }
+  .road-baseline {
+    font-size: 8px;
+    display: block;
+  }
+  .road-baseline span {
+    display: block;
+    margin-top: 8px;
+  }
+  .public-experience .public-footer {
+    padding-top: 32px;
+  }
+  .product-heading {
+    display: block;
+    margin-bottom: 22px;
+  }
+  .product-heading h1 {
+    font-size: 64px;
+    margin-bottom: 12px;
+    line-height: 1.03;
+  }
+  .product-heading > span {
+    font-size: 10px;
+  }
+  .public-experience .product-page .detail-photo img {
+    height: 330px;
+  }
+  .public-experience .product-page .detail-photo > span {
+    left: 14px;
+    top: 14px;
+    font-size: 9px;
+  }
+  .public-experience .vehicle-detail-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 24px;
+  }
+  .public-experience .booking-aside {
+    order: -1;
+    width: 100%;
+  }
+  .public-experience .reservation-summary {
+    position: static;
+    padding: 24px;
+  }
+  .public-experience .reservation-summary > img {
+    height: 200px;
+  }
+  .public-experience .stepper {
+    margin-bottom: 28px;
+  }
+  .public-experience .booking-step .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .motion-faq h2 {
+    font-size: 13px;
+  }
+  .motion-faq button {
+    padding: 22px 0;
+    min-height: 70px;
+  }
+  .faq-context {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+  }
+  .faq-context > img {
+    height: 100%;
+    object-position: 65% center;
+  }
+  .faq-context > div {
+    padding: 24px 18px;
+  }
+  .faq-context h2 {
+    font-size: 34px;
+  }
+  .faq-context .eyebrow {
+    font-size: 8px;
+  }
+  .faq-context p {
+    font-size: 10px;
+  }
+  .public-experience .about-page .info-split {
+    grid-template-columns: 1fr;
+  }
+  .public-experience .about-page .info-split > img {
+    height: 390px;
+  }
+  .contact-photo {
+    height: 210px;
+  }
+  .public-experience .portal-entry {
+    padding-right: 0;
+    min-height: 0;
+  }
+  .public-experience .portal-entry h1 {
+    font-size: 60px;
+  }
+  .portal-entry:after {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin-top: 32px;
+    background-position: 60% center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .public-experience *,
+  .public-experience *:before,
+  .public-experience *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .public-experience [data-reveal],
+  .public-experience [data-reveal] img {
+    clip-path: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .public-experience .hero-photo {
+    transform: none !important;
+  }
+  .planner-row,
+  .planner-block {
+    transition: none;
+  }
+}

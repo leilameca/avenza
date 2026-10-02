@@ -1,0 +1,8 @@
+node_modules
+.next
+codex-frontend-design-skill-main
+ui-ux-pro-max-skill-main
+test-results
+playwright-report
+public
+package-lock.json

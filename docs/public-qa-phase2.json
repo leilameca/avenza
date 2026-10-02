@@ -1,0 +1,467 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/flota",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/flota/AV-006",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/reservar",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/nosotros",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/preguntas",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/contacto",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/portal",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/portal/AVZ-261002-027",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/flota/INVALID",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1440,
+      "route": "/confirmacion/INVALID",
+      "documentWidth": 1440,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/flota",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/flota/AV-006",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/reservar",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/nosotros",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/preguntas",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/contacto",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/portal",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/portal/AVZ-261002-027",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/flota/INVALID",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1280,
+      "route": "/confirmacion/INVALID",
+      "documentWidth": 1280,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/flota",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/flota/AV-006",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/reservar",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/nosotros",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/preguntas",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/contacto",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/portal",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/portal/AVZ-261002-027",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/flota/INVALID",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 1024,
+      "route": "/confirmacion/INVALID",
+      "documentWidth": 1024,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/flota",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/flota/AV-006",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/reservar",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/nosotros",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/preguntas",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/contacto",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/portal",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/portal/AVZ-261002-027",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/flota/INVALID",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 768,
+      "route": "/confirmacion/INVALID",
+      "documentWidth": 768,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/flota",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/flota/AV-006",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/reservar",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/nosotros",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/preguntas",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/contacto",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/portal",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/portal/AVZ-261002-027",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/flota/INVALID",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 430,
+      "route": "/confirmacion/INVALID",
+      "documentWidth": 430,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/flota",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/flota/AV-006",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/reservar",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/nosotros",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/preguntas",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/contacto",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/portal",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/portal/AVZ-261002-027",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/flota/INVALID",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    },
+    {
+      "width": 390,
+      "route": "/confirmacion/INVALID",
+      "documentWidth": 390,
+      "brokenImages": [],
+      "outside": []
+    }
+  ],
+  "errors": []
+}

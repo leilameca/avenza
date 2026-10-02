@@ -1,0 +1,42 @@
+[
+  {
+    "route": "/",
+    "violations": []
+  },
+  {
+    "route": "/reservar",
+    "violations": []
+  },
+  {
+    "route": "/preguntas",
+    "violations": []
+  },
+  {
+    "route": "/contacto",
+    "violations": []
+  },
+  {
+    "route": "/portal",
+    "violations": []
+  },
+  {
+    "route": "/flota/AV-006",
+    "violations": []
+  },
+  {
+    "route": "/operaciones",
+    "violations": []
+  },
+  {
+    "route": "/operaciones/planner",
+    "violations": []
+  },
+  {
+    "route": "/operaciones/reservas/AVZ-261002-027",
+    "violations": []
+  },
+  {
+    "route": "/operaciones/inspeccion/AVZ-261002-027",
+    "violations": []
+  }
+]

@@ -1,0 +1,28 @@
+node_modules/
+.next/
+test-results/
+playwright-report/
+.env*
+*.tsbuildinfo
+
+# Local design tools and agent configuration are not part of the app.
+codex-frontend-design-skill-main/
+ui-ux-pro-max-skill-main/
+.agents/
+.codex/
+.aws/
+**/SKILL.md
+*.zip
+
+# Diagnostic captures and one-off migration tools.
+docs/before-*.png
+!docs/before-after-desktop.png
+docs/before_*.png
+docs/public-audit-before.json
+docs/layout-check.png
+scripts/apply-public-pass.cjs
+scripts/debug-motion.cjs
+scripts/audit-public.cjs
+scripts/audit-public-states.cjs
+scripts/update-phase2-docs.cjs
+docs/phase2-_*.png
